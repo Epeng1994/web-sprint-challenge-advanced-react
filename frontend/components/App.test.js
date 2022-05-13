@@ -1,4 +1,8 @@
 // Write your tests here
-test('sanity', () => {
-  expect(true).toBe(false)
+import AppClass from './AppClass.js'
+import { render, screen, waitFor } from '@testing-library/react';
+
+
+test('App renders', () => {
+  render(<AppClass/>)
 })
